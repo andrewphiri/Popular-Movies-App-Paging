@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="trailerOne"
+        android:id="@+id/trailer1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_button"/>
+
+        <TextView
+           style="@style/trailerTextView"
+            android:text="@string/trailer_1"
+            android:id="@+id/textViewTrailer1"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="trailerTwo"
+        android:id="@+id/trailer2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_button"/>
+
+        <TextView
+            style="@style/trailerTextView"
+            android:text="Trailer 2"
+            android:id="@+id/textViewTrailer2"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/border"
+        android:id="@+id/borderline"/>
+
+</LinearLayout>
